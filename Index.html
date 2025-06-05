@@ -18,16 +18,17 @@
           width="10%"
         />
         <h2>Sing Star</h2>
-        
-          <ul class="navbar-links">
-            <li><a href="#artista1">Perico</a></li>
-            <li><a href="#artista2">Malafé</a></li>
-            <li><a href="#agenda">Agenda</a></li>
-          </ul>
-        
+
+        <ul class="navbar-links" aria-label="Menu">
+          <li aria-label="Link a perico"><a href="#artista1">Perico</a></li>
+          <li aria-label="Link a Malafé"><a href="#artista2">Malafé</a></li>
+          <li aria-label="Link a Agenda"><a href="#agenda">Agenda</a></li>
+        </ul>
       </nav>
     </header>
-    <!-- Comentar es de guapas.   -->
+    
+    
+<!-- Cuerpo de la página tres secciones, dos de artistas con foto y texto ilustrativo y una con la tabla con los conciertos-->
 
     <main>
       <section class="titulo">
@@ -37,14 +38,16 @@
         </p>
       </section>
 
-      <section id="artista1" aria-label="Artista 1">
-        
-          <img
+
+<!-- Artista 1  --+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--->
+      <section id="artista1" aria-label="perico de los palotes">
+        <img
           class="artista1-imagen"
-            src="./media/perico.jpeg"
-            alt="Perico de los palotes en plena actuación"
-          />
-        
+          aria-label="Imagen"
+          src="./media/perico.jpeg"
+          alt="Perico de los palotes en plena actuación"
+        />
+
         <div class="artista1-texto">
           <h2>Perico de los palotes</h2>
           <p>
@@ -61,8 +64,10 @@
           </p>
         </div>
       </section>
-
-      <section id="artista2">
+ 
+ 
+<!-- Artista 2  --+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--->
+      <section id="artista2" aria-label="Malafé de triana">
         <div class="artista2-texto">
           <h2>Malafé de triana</h2>
           <p>
@@ -78,11 +83,16 @@
             había desparramado un muestrario
           </p>
         </div>
-        
-          <img class="artista2-imagen" src="./media/malafe.jpeg" alt="Peroco " srcset="" />
-       
-      </section>
 
+        <img
+          class="artista2-imagen"
+          src="./media/malafe.jpeg"
+          alt="Malafé de triana dándolo todo"
+          aria-label="Imagen"
+        />
+      </section>
+    
+ <!-- Agenda  --+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--->
       <section
         id="agenda"
         class="agenda-conciertos"
@@ -90,10 +100,7 @@
       >
         <h2>Agenda de conciertos</h2>
         <p>Consulta la agenda de conciertos de tus artistas favoritos</p>
-        <table class="agenda-table">
-          <caption>
-            Agenda de conciertos
-          </caption>
+        <table class="agenda-table" aria-label="Tabla con la agenda">
           <thead class="agenda-header">
             <tr>
               <th>Artista</th>
@@ -145,23 +152,21 @@
       </section>
     </main>
 
- <!-- El footer, con los logos yel copy y un enlace hacia arriba.-->
+    <!-- El footer, con los logos y el copy y un enlace hacia arriba.-->
     <footer>
- <img
-          class="logo"
-          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRx-GppkPeyHkLustQkjKXYLxc6lr48L13Z7UwH7Fl95e8eg1w5Fjtdm7vOPAxBmwMPy9j1tAsrJEbMFHY6NSmkZK_BTvTRceLo4FDL2K91sJ13nrhEzqZXyg&usqp=CAc"
-          alt="Logo nota musical"
-          width="10%"
-        />
-        <h2>Sing Star</h2>
-        
-          <ul class="navbar-links">
-            <li><a href="#artista1">Perico</a></li>
-            <li><a href="#artista2">Malafé</a></li>
-            <li><a href="#agenda">Agenda</a></li>
-          </ul>
-        
+      <img
+        class="logo"
+        src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRx-GppkPeyHkLustQkjKXYLxc6lr48L13Z7UwH7Fl95e8eg1w5Fjtdm7vOPAxBmwMPy9j1tAsrJEbMFHY6NSmkZK_BTvTRceLo4FDL2K91sJ13nrhEzqZXyg&usqp=CAc"
+        alt="Logo nota musical"
+        width="10%"
+      />
+      <p>made with ❤️ en <b>BCN</b></p>
 
+      <ul class="navbar-links" aria-label="Menu">
+        <li aria-label="Link a perico"><a href="#artista1">Perico</a></li>
+        <li aria-label="Link a Malafé"><a href="#artista2">Malafé</a></li>
+        <li aria-label="Link a Agenda"><a href="#agenda">Agenda</a></li>
+      </ul>
     </footer>
   </body>
 </html>
