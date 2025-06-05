@@ -1,33 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sing Star</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
+    <!-- ----Comentar es de guapas. Header Con su logo, H1 y  navbar, en tres elementos con el ultimo con dos elementos dentro,  en flex a los laos   -->
     <header>
       <nav class="navbar">
         <img
+          class="logo"
           src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRx-GppkPeyHkLustQkjKXYLxc6lr48L13Z7UwH7Fl95e8eg1w5Fjtdm7vOPAxBmwMPy9j1tAsrJEbMFHY6NSmkZK_BTvTRceLo4FDL2K91sJ13nrhEzqZXyg&usqp=CAc"
           alt="Logo nota musical"
           width="10%"
         />
-        <h1>Sing Star</h1>
-        <ul>
-          <li><a href="#artista1">artista 1</a></li>
-          <li><a href="#">Agenda</a></li>
-        </ul>
+        <h2>Sing Star</h2>
+        
+          <ul class="navbar-links">
+            <li><a href="#artista1">Perico</a></li>
+            <li><a href="#artista2">Malafé</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+          </ul>
+        
       </nav>
     </header>
+    <!-- Comentar es de guapas.   -->
 
     <main>
-      <h1 class="titulo" aria-label="Titulo">Sing Star</h1>
-      <p>The new way to conect to your favourites pop singstars</p>
+      <section class="titulo">
+        <h1 aria-label="Titulo">Sing Star</h1>
+        <p style="font-size: medium; margin: top 0">
+          The new way to conect to your favourites pop singstars
+        </p>
+      </section>
 
       <section id="artista1" aria-label="Artista 1">
         <div class="artista1-imagen">
-          <img src="./media/perico.jpeg" alt="Perico de los palotes en plena actuación"  />
+          <img
+            src="./media/perico.jpeg"
+            alt="Perico de los palotes en plena actuación"
+          />
         </div>
         <div class="artista1-texto">
           <h2>Perico de los palotes</h2>
@@ -48,7 +63,7 @@
 
       <section id="artista2">
         <div class="artista2-texto">
-          <h2>Perico de los palotes</h2>
+          <h2>Malafé de triana</h2>
           <p>
             Una mañana, tras un sueño intranquilo, Gregorio Samsa se despertó
             convertido en un monstruoso insecto. Estaba echado de espaldas sobre
@@ -63,18 +78,69 @@
           </p>
         </div>
         <div class="artista2-imagen">
-          <img src="./media/perico.jpeg" alt="Peroco " srcset="" />
+          <img src="./media/malafe.jpeg" alt="Peroco " srcset="" />
         </div>
-        
       </section>
- 
-      <section>
-<table>
-    <thead>
-        <tr></tr>
-    </thead>
-</table>
 
+      <section
+        id="agenda"
+        class="agenda-conciertos"
+        aria-label="Agenda de conciertos"
+      >
+        <h2>Agenda de conciertos</h2>
+        <p>Consulta la agenda de conciertos de tus artistas favoritos</p>
+        <table class="agenda-table">
+          <caption>
+            Agenda de conciertos
+          </caption>
+          <thead class="agenda-header">
+            <tr>
+              <th>Artista</th>
+              <th>Ciudad</th>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Perico de los palotes</td>
+              <td>Madrid</td>
+              <td>02/07/2025</td>
+              <td>20:00</td>
+              <td>50€</td>
+            </tr>
+            <tr>
+              <td>Perico de los palotes</td>
+              <td>Barcelona</td>
+              <td>04/07/2024</td>
+              <td>21:00</td>
+              <td>60€</td>
+            </tr>
+            <tr>
+              <td>Perico de los palotes</td>
+              <td>Valencia</td>
+              <td>07/07/2025</td>
+              <td>19:00</td>
+              <td>55€</td>
+            </tr>
+            <tr>
+              <td>Malafé de triana</td>
+              <td>Sevilla</td>
+              <td>02/07/2025</td>
+              <td>20:30</td>
+              <td>45€</td>
+            </tr>
+            <tr>
+              <td>Malafé de triana</td>
+              <td>Granada</td>
+              <td>05/07/2025</td>
+              <td>19:30</td>
+              <td>50€</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
     <footer></footer>
